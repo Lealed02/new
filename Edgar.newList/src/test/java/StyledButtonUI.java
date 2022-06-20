@@ -4,8 +4,9 @@ import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.plaf.basic.*;
 
-public class StyledButtonUI extends BasicButtonUI {
-	@Override
+class StyledButtonUI extends BasicButtonUI {
+
+    @Override
     public void installUI (JComponent c) {
         super.installUI(c);
         AbstractButton button = (AbstractButton) c;

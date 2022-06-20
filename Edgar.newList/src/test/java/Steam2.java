@@ -83,8 +83,10 @@ public void createGUI() {
 		homePanel.add(hme);
 		homePanel.add(collections);
 		
-		Button button = new Button("Hi");
+		JButton button = new JButton();
 		button.setUI(new StyledButtonUI());
+		
+		
 		search.add(button);
 		
 		search.setBackground(new Color(36,40,47,255));
