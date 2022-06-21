@@ -37,7 +37,11 @@ public void createGUI() {
 	setupBorders();
 	
 	frame.add(focus, BorderLayout.CENTER);
+	
+	JScrollPane test = new JScrollPane(sideBar);
+
 	frame.add(sideBar, BorderLayout.WEST);
+	
 	frame.add(HMenuBar, BorderLayout.NORTH);
 	frame.setJMenuBar(LMenuBar);
 	
@@ -83,7 +87,7 @@ public void createGUI() {
 		homePanel.add(hme);
 		homePanel.add(collections);
 		
-		JButton button = new JButton();
+		JButton button = new JButton("AAAAAAAAAAAAAAAA");
 		button.setUI(new StyledButtonUI());
 		
 		
@@ -101,6 +105,14 @@ public void createGUI() {
 		sideBar.setLayout(sBdr);
 		sideBar.add(top, BorderLayout.NORTH);
 		
+		JPanel pane = new JPanel();
+		pane.setLayout(new BoxLayout(pane, BoxLayout.Y_AXIS));
+		for (int i = 0; i < 50; i++) {
+			pane.add(new JButton("hi"));
+		}
+		
+		JScrollPane list = new JScrollPane(pane);
+		sideBar.add(list, BorderLayout.CENTER);
 		sideBar.setBackground(new Color(36,40,47,255));
 		//sideBar.setBorder(BorderFactory.createRaisedBevelBorder());
 		

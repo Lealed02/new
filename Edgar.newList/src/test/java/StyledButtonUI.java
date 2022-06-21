@@ -28,6 +28,6 @@ class StyledButtonUI extends BasicButtonUI {
         g.setColor(c.getBackground().darker());
         g.fillRoundRect(0, yOffset, size.width, size.height - yOffset, 10, 10);
         g.setColor(c.getBackground());
-        g.fillRoundRect(0, yOffset, size.width, size.height + yOffset - 5, 10, 10);
+       g.fillRoundRect(0, yOffset, size.width, size.height + yOffset - 5, 10, 10);
     }
 }
